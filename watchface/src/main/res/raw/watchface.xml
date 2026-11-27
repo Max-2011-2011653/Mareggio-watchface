@@ -59,7 +59,7 @@
 
 
     <ComplicationSlot slotId="0" name="cruscotto" displayName="Cruscotto marea" x="25" y="175" width="400" height="260" supportedTypes="SMALL_IMAGE">
-      <DefaultProviderPolicy defaultSystemProvider="EMPTY" defaultSystemProviderType="EMPTY" primaryProvider="it.mareggio.face/it.mareggio.face.CruscottoProviderService" primaryProviderType="SMALL_IMAGE" />
+     <DefaultProviderPolicy defaultSystemProvider="EMPTY" defaultSystemProviderType="EMPTY" />
       <BoundingBox x="0" y="0" width="400" height="260" />
       <Complication type="SMALL_IMAGE">
         <PartImage x="0" y="0" width="400" height="260">
