@@ -3,7 +3,7 @@
   <Metadata key="CLOCK_TYPE" value="DIGITAL" />
   <Metadata key="PREVIEW_TIME" value="10:09:00" />
 
-  <Scene backgroundColor="#ff0a1a22">
+  <Scene backgroundColor="#ffcc0000">
 
     <PartDraw x="0" y="0" width="450" height="450">
       <Ellipse x="6" y="6" width="438" height="438">
