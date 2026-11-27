@@ -264,7 +264,7 @@ class MareggioRenderer(
         c.drawText(if (um != null) "umid. " + um.roundToInt() + "%" else "", 82f, 126f, pt(15f, grigio))
 
         // destra: pressione
-        val colP = pr?.color? ?: grigio
+        val colP = pr?.color ?: grigio
         c.drawCircle(368f, 72f, 8f, pieno(colP))
         c.drawText(if (pr != null) pr.p.roundToInt().toString() else "--", 368f, 104f, pt(28f, Color.WHITE, true))
         c.drawText(if (pr != null) "hPa " + pr.word else "", 360f, 126f, pt(12f, grigio))
