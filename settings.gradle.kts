@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MareggioFace"
 include(":app")
+include(":watchface")

@@ -19,7 +19,7 @@ class PermessoActivity : Activity() {
         }
         setContentView(tv)
         if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            tv.text = "Posizione gia concessa.\nScegli Mareggio Face tra i quadranti."
+            tv.text = "Posizione gia concessa. Puoi chiudere questa schermata."
         } else {
             tv.text = "Concedi la posizione per avere i dati del tuo punto."
             requestPermissions(
