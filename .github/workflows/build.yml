@@ -21,3 +21,7 @@ jobs:
         with:
           name: MareggioFace-apk
           path: app/build/outputs/apk/debug/app-debug.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Quadrante-apk
+          path: watchface/build/outputs/apk/debug/*.apk
