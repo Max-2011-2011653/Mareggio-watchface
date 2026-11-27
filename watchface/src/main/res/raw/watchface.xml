@@ -3,7 +3,7 @@
   <Metadata key="CLOCK_TYPE" value="DIGITAL" />
   <Metadata key="PREVIEW_TIME" value="10:09:00" />
 
-  <Scene backgroundColor="#ffcc0000">
+  <Scene backgroundColor="#ff0a1a22">
 
     <PartDraw x="0" y="0" width="450" height="450">
       <Ellipse x="6" y="6" width="438" height="438">
@@ -11,11 +11,13 @@
       </Ellipse>
     </PartDraw>
 
-    <DigitalClock x="0" y="40" width="450" height="40">
-      <TimeText x="0" y="0" width="450" height="40" format="EEE d MMM" align="CENTER">
-        <Font family="SYNC_TO_DEVICE" size="20" color="#ffb8d4e0" />
-      </TimeText>
-    </DigitalClock>
+    <PartText x="0" y="40" width="450" height="40">
+      <Text align="CENTER">
+        <Font family="SYNC_TO_DEVICE" size="20" color="#ffb8d4e0">
+          <Template>%s %d %s<Parameter expression="[DAY_OF_WEEK_S]" /><Parameter expression="[DAY]" /><Parameter expression="[MONTH_S]" /></Template>
+        </Font>
+      </Text>
+    </PartText>
 
     <DigitalClock x="0" y="84" width="450" height="76">
       <TimeText x="0" y="0" width="450" height="76" format="hh:mm" hourFormat="SYNC_TO_DEVICE" align="CENTER">
@@ -32,32 +34,25 @@
       </Ellipse>
     </PartDraw>
 
-    <PartText x="55" y="116" width="80" height="34">
+    <PartText x="35" y="116" width="120" height="34">
       <Text align="CENTER">
         <Font family="SYNC_TO_DEVICE" size="22" color="#ffffffff">
-          <Template>%d<Parameter expression="[HR]" /></Template>
-        </Font>
-      </Text>
-    </PartText>
-    <PartText x="55" y="148" width="80" height="22">
-      <Text align="CENTER">
-        <Font family="SYNC_TO_DEVICE" size="13" color="#ff8fb3c2">
-          <Template>bpm</Template>
+          <Template>%d bpm<Parameter expression="[HR]" /></Template>
         </Font>
       </Text>
     </PartText>
 
-    <PartText x="315" y="116" width="80" height="34">
+    <PartText x="295" y="116" width="120" height="34">
       <Text align="CENTER">
         <Font family="SYNC_TO_DEVICE" size="22" color="#ffffffff">
-          <Template>%.1f<Parameter expression="[STEP_COUNT] * 0.00075" /></Template>
+          <Template>%.1f km<Parameter expression="[STEP_COUNT] * 0.00075" /></Template>
         </Font>
       </Text>
     </PartText>
-    <PartText x="280" y="148" width="150" height="22">
+    <PartText x="295" y="148" width="120" height="22">
       <Text align="CENTER">
         <Font family="SYNC_TO_DEVICE" size="13" color="#ff8fb3c2">
-          <Template>km · %d passi<Parameter expression="[STEP_COUNT]" /></Template>
+          <Template>%d passi<Parameter expression="[STEP_COUNT]" /></Template>
         </Font>
       </Text>
     </PartText>
